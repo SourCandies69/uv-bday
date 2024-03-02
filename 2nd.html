@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wish</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: url('bg.png'); 
+        background-size: 600px 780px;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        overflow: hidden;
+    }
+    
+    .image-row {
+        margin-bottom: 5px; /* Adjust as needed */
+    }
+
+    .centerImage {
+        margin: 0 10px; /* Adjust as needed */
+        width: 180px;
+        height: 210px;
+    }
+
+    .circular-button {
+        width: 50px;
+        height: 50px;
+        background-color: #fb0000;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        margin-top: 10px;
+    }
+
+    .circular-button img {
+        width: 110%;
+        height: 100%;
+        /* margin: 1%; */
+    }
+</style>
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="chipi.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    <div class="image-row">
+        <img class="centerImage" src="bts.png" alt="Image 1"> <!-- Specify your image 1 path -->
+    </div>
+    <div class="image-row">
+        <img class="centerImage" src="open.png" alt="Image 2"> <!-- Specify your image 2 path -->
+    </div>
+    <a href="3rd.html">
+        <button class="circular-button">
+            <img src="click.png" alt="Click">
+        </button>
+    </a>
+</body>
+</html>
